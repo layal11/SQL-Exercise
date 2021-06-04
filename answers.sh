@@ -80,3 +80,29 @@ ON companies.name = employees.Company
 WHERE employees.Role = "Graphic Designer"
 
 
+SELECT name
+FROM students
+where points IN (
+SELECT max(points)
+from students
+)
+
+
+SELECT avg(Points)
+FROM students
+
+
+SELECT count(*)
+FROM students
+WHERE Points = 500
+
+
+
+SELECT name
+FROM students
+WHERE name like "%s%"
+
+
+SELECT *
+FROM students
+ORDER BY Points DESC;
